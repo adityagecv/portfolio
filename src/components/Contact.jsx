@@ -1,7 +1,9 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
+import Linkedin from "../assets/Cn_logo/icons8-linkedin.svg";
+import Github from "../assets/Cn_logo/icons8-github.svg";
+import Web from "../assets/Cn_logo/icons8-globe-50.png";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -81,45 +83,60 @@ const Contact = () => {
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
+            {/* <span className="text-white font-medium mb-4">Your Name</span> */}
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder="Name:"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your email</span>
+            {/* <span className="text-white font-medium mb-4">Your email</span> */}
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="Email:"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
+            {/* <span className="text-white font-medium mb-4">Your Message</span> */}
             <textarea
               rows={7}
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What you want to say?"
+              placeholder="Message:"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
-
-          <button
-            type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
+          <div className="flex justify-between">
+            <div className="flex gap-8 align-middle">
+              <a
+                href="https://www.linkedin.com/in/adityagecv21/"
+                target="_blank"
+              >
+                <img src={Linkedin} alt="Linkedin Logo" />
+              </a>
+              <a href="https://github.com/adityagecv" target="_blank">
+                <img src={Github} alt="Github logo" className="w-99" />
+              </a>
+              <a href="">
+                <img src={Web} alt="website" />
+              </a>
+            </div>
+            <button
+              type="submit"
+              className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+            >
+              {loading ? "Sending..." : "Submit"}
+            </button>
+          </div>
         </form>
       </motion.div>
 
