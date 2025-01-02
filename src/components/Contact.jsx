@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import Linkedin from "../assets/Cn_logo/icons8-linkedin.svg";
 import Github from "../assets/Cn_logo/icons8-github.svg";
-import Web from "../assets/Cn_logo/icons8-globe-50.png";
+import Web from "../assets/Cn_logo/icons8-earth-48.png";
+import Email from "../assets/Cn_logo/icons8-email-48.png";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -116,7 +117,7 @@ const Contact = () => {
             />
           </label>
           <div className="flex justify-between">
-            <div className="flex gap-8 align-middle">
+            <div className="flex gap-4 align-middle">
               <a
                 href="https://www.linkedin.com/in/adityagecv21/"
                 target="_blank"
@@ -124,7 +125,10 @@ const Contact = () => {
                 <img src={Linkedin} alt="Linkedin Logo" />
               </a>
               <a href="https://github.com/adityagecv" target="_blank">
-                <img src={Github} alt="Github logo" className="w-99" />
+                <img src={Github} alt="Github logo" />
+              </a>
+              <a href="">
+                <img src={Email} alt="Email" />
               </a>
               <a href="">
                 <img src={Web} alt="website" />
