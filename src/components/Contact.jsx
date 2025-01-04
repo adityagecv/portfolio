@@ -127,7 +127,7 @@ const Contact = () => {
               <a href="https://github.com/adityagecv" target="_blank">
                 <img src={Github} alt="Github logo" />
               </a>
-              <a href="">
+              <a href="mailto:aditya.gecv21@gmail.com" target="_blank">
                 <img src={Email} alt="Email" />
               </a>
               <a href="">
