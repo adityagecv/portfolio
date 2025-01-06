@@ -11,7 +11,7 @@ import {
   redux,
   tailwind,
   nodejs,
-  mongodb,
+  nextjs,
   git,
   figma,
   docker,
@@ -42,19 +42,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Nextjs",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Typescript",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Python",
     icon: creator,
   },
 ];
@@ -93,8 +93,8 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "nextjs",
+    icon: nextjs,
   },
   {
     name: "Three JS",
@@ -203,7 +203,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "nextjs",
         color: "green-text-gradient",
       },
       {
@@ -236,20 +236,20 @@ const projects = [
     source_code_link: "https://github.com/adityagecv/disney-plus-clone",
   },
   {
-    name: "Trip Guide",
+    name: "Movie Recommender",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Built an interactive Movie Recommender WebApp using Python and Streamlit. Integrated TMDb API to fetch movie posters and implemented a similarity-based algorithm to suggest movies. Designed a dynamic interface to display personalized recommendations with titles and posters.",
     tags: [
       {
-        name: "nextjs",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "streamlit",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "pandas",
         color: "pink-text-gradient",
       },
     ],

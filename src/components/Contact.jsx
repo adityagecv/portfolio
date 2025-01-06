@@ -1,15 +1,14 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import Linkedin from "../assets/Cn_logo/icons8-linkedin.svg";
-import Github from "../assets/Cn_logo/icons8-github.svg";
-import Web from "../assets/Cn_logo/icons8-earth-48.png";
-import Email from "../assets/Cn_logo/icons8-email-48.png";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-
+import { Linkedin } from "lucide-react";
+import { Github } from "lucide-react";
+import { Mail } from "lucide-react";
+import { Globe } from "lucide-react";
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -117,21 +116,21 @@ const Contact = () => {
             />
           </label>
           <div className="flex justify-between">
-            <div className="flex gap-4 align-middle">
+            <div className="flex gap-4 items-center">
               <a
                 href="https://www.linkedin.com/in/adityagecv21/"
                 target="_blank"
               >
-                <img src={Linkedin} alt="Linkedin Logo" />
+                <Linkedin size={24} color="grey" />
               </a>
               <a href="https://github.com/adityagecv" target="_blank">
-                <img src={Github} alt="Github logo" />
+                <Github size={24} color="grey" />
               </a>
               <a href="mailto:aditya.gecv21@gmail.com" target="_blank">
-                <img src={Email} alt="Email" />
+                <Mail size={24} color="grey" />
               </a>
-              <a href="">
-                <img src={Web} alt="website" />
+              <a href="https://adityagecv.github.io/portfolio/">
+                <Globe size={24} color="grey" />
               </a>
             </div>
             <button
