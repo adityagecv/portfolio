@@ -20,8 +20,8 @@ import {
   Mathworks,
   salesforce,
   carrent,
-  jobit,
-  tripguide,
+  Hotstar_clone,
+  Movie_recommender,
   threejs,
 } from "../assets";
 
@@ -213,6 +213,7 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/Elevatronix-IITP/website",
+    website_link: "https://elevatronix.in/",
   },
   {
     name: "Hotstar Clone",
@@ -232,8 +233,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: Hotstar_clone,
     source_code_link: "https://github.com/adityagecv/disney-plus-clone",
+    website_link: "https://aditya-gec-vaishali-disney-clone.netlify.app/",
   },
   {
     name: "Movie Recommender",
@@ -253,8 +255,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: Movie_recommender,
     source_code_link: "https://github.com/adityagecv/Movie-Recommender",
+    website_link: "#",
   },
 ];
 

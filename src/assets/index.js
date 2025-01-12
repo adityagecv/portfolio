@@ -27,8 +27,8 @@ import Asaan from "./company/Asaan.jpeg";
 import Mathworks from "./company/Mathworks.png";
 
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import Hotstar_clone from "./Hotstar_clone.png";
+import Movie_recommender from "./Movie_recommender.png";
 
 export {
   logo,
@@ -57,6 +57,6 @@ export {
   Asaan,
   Mathworks,
   carrent,
-  jobit,
-  tripguide,
+  Hotstar_clone,
+  Movie_recommender,
 };
